@@ -1,0 +1,122 @@
+main{
+    width: 100%;
+    height: min-content;
+}
+.hero-section--image{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(../assets/images/Sunset.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-header--container{
+    width: 100;
+    height: 10vh;
+
+    background-color: var(--background-color-button-1);
+    color: var(--font-color-1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: var(--font-size-2);
+    font-weight: bold;
+}
+
+.product-container{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 4rem;
+}
+
+.product-info--container1{
+    margin-top: 10rem;
+
+    width: 40%;
+    height: 30vh;
+}
+
+.product-header{
+    font-weight: bolder;
+    padding-bottom: 2rem;
+}
+
+.product-image--container--top{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image--top{
+    width: 80%;
+}
+
+.product-image--container--side{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image--side{
+    width: 80%;
+}
+
+.product-paragraph--container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.product-info__container--last{
+    margin-top: 8rem;
+    width: 40%;
+}
+
+.product-header--last{
+    padding-bottom: 1rem;
+}
+
+.pr0duct-inside__image{
+    height: 20vh;
+    width: 100%;
+}
+
+.produt-info__last-section{
+    height: 40vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 2px solid black;
+}
+
+.product__button--container{
+    background-color: var(--background-color-button-1);
+    height: 15%;
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--border-radius-button);
+}
+
+.product__button--link{
+    color: var(--font-color-1);
+}
