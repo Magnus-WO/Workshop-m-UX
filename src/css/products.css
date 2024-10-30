@@ -101,8 +101,6 @@ h1{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-    border: 2px solid black;
 }
 
 .product__button--container{
