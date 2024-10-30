@@ -1,0 +1,202 @@
+
+.OrderContainer {
+    display: flex;
+    background-color: rgb(158, 255, 255);
+    border-radius: 16px;
+    flex-direction: column;
+    width: 80%;
+    height: 600px;
+    border-radius: 16px;
+    padding: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.TopContainer {
+    background-color: #1c2122;
+    width: 100%;
+    height: 95px; 
+    border-radius: 8px 8px 0px 0px;
+}
+
+.CenterContainer 
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+background-color: #2E3538;
+flex-direction: row;
+padding: 32px;
+border-radius: 0px 0px 0 0;
+
+}
+
+    .RightContainer {
+        display: flex;
+        background-color: azure;
+        justify-content: center;
+        align-items: top;
+        border-radius: 0 8px 8px 0;
+        width: 100%;
+        padding: 16px;
+    }
+    .LeftContainer 
+    {
+        display: flex;
+        background-color: #F5F6F0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px 0px 0px 8px;
+        width: 100%;
+        height: 100;    
+    }
+
+.BottomContainer 
+{
+display: flex;
+background-color: #2E3538;
+border-radius: 0 0 8px 8px;
+justify-content: end;
+}
+
+.clickable-image {
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .selected {
+    border-color: blue;
+  }
+  
+
+/* Hide all steps initially */
+.step {
+    display: none;
+  }
+  
+  /* Show only the active step */
+  .step.active {
+    display: block;
+  }
+
+
+  .color-option {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+/* Highlight the selected square */
+.selected {
+    border-color: #000;
+}
+  
+  /* Basic styling for stepper buttons */
+  button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for card container */
+  .card-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Styling for each card */
+  .card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Card hover and active state */
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .card.selected {
+    border-color: #007bff;
+    background-color: #e6f2ff;
+  }
+  .step {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
