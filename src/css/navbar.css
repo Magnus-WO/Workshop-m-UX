@@ -1,0 +1,40 @@
+nav{
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    border-bottom: 1px solid grey;
+}
+
+.navbar__link-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+
+.navbar__link-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.navbar__link-icon{
+    height: 80%;
+    width: 13rem;
+}
+
+.navbar__link{
+    color: black;
+    font-size: var(--font-size);
+}
+
+.navbar__link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
