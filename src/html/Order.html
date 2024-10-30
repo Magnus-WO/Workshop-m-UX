@@ -9,11 +9,106 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stepper.css">
 </head>
 <body>
     <nav></nav>
-    <main></main>
+    <main>
+        <div class = "OrderContainer"> Order Container 
+            <div class = "TopContainer"> Progress Feedback></div>
+            <div class = "CenterContainer"> 
+
+                <div class = "LeftContainer"> 
+                    <div class= "PreviewImage"> </div> 
+                </div>
+
+                <div class = "RightContainer"> 
+
+                    <form id="stepperForm">
+
+                        4-Step Stepper Form
+                
+                        <!-- Step 1 -->
+                        <div class="step active" id="step1">
+                            <h2>Step 1</h2>
+                            <h2>Select a type of car:</h2>
+                            <input type="radio" id="diesel" name="carType" value="Diesel">
+                                <label for="diesel">Diesel</label><br>
+
+                                    <input type="radio" id="petrol" name="carType" value="Petrol">
+                                     <label for="petrol">Petrol</label><br>
+                                     <input type="radio" id="electric" name="carType" value="Electric">
+                                    <label for="electric">Electric</label><br>
+
+                                    <input type="radio" id="hybrid" name="carType" value="Hybrid">
+                                    <label for="hybrid">Hybrid</label><br>
+                        </div>
+                
+                        <!-- Step 2 -->
+                        <div class="step" id="step2">
+                            <h2>Select Engine Type:</h2>
+
+                            <input type="radio" id="350hp" name="engineType" value="350hp">
+                             <label for="350hp">350 HP</label><br>
+
+                            <input type="radio" id="450hp" name="engineType" value="450hp">
+                             <label for="450hp">450 HP</label><br>
+
+                             <input type="radio" id="600hp" name="engineType" value="600hp">
+                             <label for="600hp">600 HP</label><br>
+                            
+                         </div>
+                
+                        <!-- Step 3 -->
+                        <div class="step" id="step3">
+                            <h2>Select Transmission Type:</h2>
+
+                            <input type="radio" id="automatic" name="transmissionType" value="automatic">
+                             <label for="automatic">Automatic</label><br>
+
+                             <input type="radio" id="manual" name="transmissionType" value="manual">
+                             <label for="manual">Manual</label><br>
+                           
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="step" id="step4">
+                            <h2>Step 4</h2>
+                            <label for="Color">Color:</label>
+                            
+                            <div class="color-selection">
+                                <div class="color-option" style="background-color: red;" onclick="selectSquare(this)"></div>
+                                <div class="color-option" style="background-color: blue;" onclick="selectSquare(this)"></div>
+                                <div class="color-option" style="background-color: green;" onclick="selectSquare(this)"></div>
+                                <div class="color-option" style="background-color: yellow;" onclick="selectSquare(this)"></div>
+                            </div>
+                         </div>
+                
+                         <!-- Step 5 -->
+                        <div class="step" id="step5">
+                            <h2>Step 4</h2>
+                            <label for="interior">Interior:</label>
+                            <input type="number" id="color" name="color">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+
+                    
+                    </form>
+            </div>
+            
+            <div class = "BottomContainer"> Bottom Container
+                <button type="button" onclick="prevStep()">Back</button>
+                <button type="button" onclick="nextStep()">Next</button>
+                
+                </div>
+            </div>
+            
+        
+    </main>
+    <form id="stepperForm"></form>
+  
     <footer></footer>
     <script src="../app.js"></script>
+    <script src="../stepper.js"></script>
 </body>
 </html>
