@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: instrument;
+    src: url(../assets/fonts/InstrumentSans-Regular.ttf);
+}
+
 a{
     text-decoration: none;
+    font-family: instrument;
+}
+
+h1{
+    font-family: instrument;
+}
+
+h2{ 
+    font-family: instrument;
+}
+
+h3{
+    font-family: instrument;
+}
+
+p{
+    font-family: instrument;
 }

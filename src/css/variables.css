@@ -1,5 +1,12 @@
 :root{
     --font-size-1: 1.1rem;
-    --font-size-2: 3rem;
+    --font-size-2: 2.5rem;
+    --font-size-3: 4rem;
+
     --font-color-1: white;
+
+    --background-color-button-1: #2E3538;
+    --background-color-divider: #D9D9D9;
+
+    --border-radius-button: 100px;
 }

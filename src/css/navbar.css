@@ -6,6 +6,9 @@ nav{
     justify-content: space-around;
 
     border-bottom: 1px solid grey;
+    background-color: white;
+    position: sticky;
+    top: 0;
 }
 
 .navbar__link-container{
@@ -16,13 +19,16 @@ nav{
     align-items: flex-end;
     justify-content: space-evenly;
     padding-bottom: 1rem;
+    padding-right: 2rem;
 }
 
 .navbar__link-icon-container{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
+
+    padding-left: 2rem;
 }
 .navbar__link-icon{
     height: 80%;
@@ -32,6 +38,7 @@ nav{
 .navbar__link{
     color: black;
     font-size: var(--font-size);
+    font-family: instrument;
 }
 
 .navbar__link:hover{
