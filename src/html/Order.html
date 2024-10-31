@@ -12,7 +12,21 @@
     <link rel="stylesheet" href="../css/stepper.css">
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <div class="navbar__link-icon-container">
+            <a href="index.html">
+            <img src="../assets/images/RE-MOTORS.png" alt="image of the company logo" class="navbar__link-icon">
+        </a>
+        </div>
+        <div class="navbar__link-container navbar__link-container--empty">
+
+        </div>
+        <div class="navbar__link-container">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="products.html" class="navbar__link"><u>Products</u></a>
+            <a href="Order.html" class="navbar__link">Order</a>  
+        </div>
+    </nav>
     <main>
         <div class = "OrderContainer"> Order Container 
             <div class = "TopContainer"> Progress Feedback></div>
@@ -30,18 +44,18 @@
                 
                         <!-- Step 1 -->
                         <div class="step active" id="step1">
-                            <h2>Step 1</h2>
                             <h2>Select a type of car:</h2>
                             <input type="radio" id="diesel" name="carType" value="Diesel">
-                                <label for="diesel">Diesel</label><br>
+                            <label for="diesel">Diesel</label><br>
 
-                                    <input type="radio" id="petrol" name="carType" value="Petrol">
-                                     <label for="petrol">Petrol</label><br>
-                                     <input type="radio" id="electric" name="carType" value="Electric">
-                                    <label for="electric">Electric</label><br>
+                            <input type="radio" id="petrol" name="carType" value="Petrol">
+                            <label for="petrol">Petrol</label><br>
 
-                                    <input type="radio" id="hybrid" name="carType" value="Hybrid">
-                                    <label for="hybrid">Hybrid</label><br>
+                            <input type="radio" id="electric" name="carType" value="Electric">
+                            <label for="electric">Electric</label><br>
+
+                            <input type="radio" id="hybrid" name="carType" value="Hybrid">
+                            <label for="hybrid">Hybrid</label><br>
                         </div>
                 
                         <!-- Step 2 -->
@@ -56,7 +70,6 @@
 
                              <input type="radio" id="600hp" name="engineType" value="600hp">
                              <label for="600hp">600 HP</label><br>
-                            
                          </div>
                 
                         <!-- Step 3 -->
@@ -64,15 +77,13 @@
                             <h2>Select Transmission Type:</h2>
 
                             <input type="radio" id="automatic" name="transmissionType" value="automatic">
-                             <label for="automatic">Automatic</label><br>
+                            <label for="automatic">Automatic</label><br>
 
-                             <input type="radio" id="manual" name="transmissionType" value="manual">
-                             <label for="manual">Manual</label><br>
-                           
+                            <input type="radio" id="manual" name="transmissionType" value="manual">
+                            <label for="manual">Manual</label><br>
                         </div>
                         <!-- Step 4 -->
                         <div class="step" id="step4">
-                            <h2>Step 4</h2>
                             <label for="Color">Color:</label>
                             
                             <div class="color-selection">
@@ -82,7 +93,6 @@
                                 <div class="color-option" style="background-color: yellow;" onclick="selectSquare(this)"></div>
                             </div>
                          </div>
-                
                          <!-- Step 5 -->
                         <div class="step" id="step5">
                             <h2>Step 4</h2>
@@ -90,10 +100,9 @@
                             <input type="number" id="color" name="color">
                             <button type="submit">Submit</button>
                         </div>
-                    </div>
-
+                    </form>    
+                </div>
                     
-                    </form>
             </div>
             
             <div class = "BottomContainer"> Bottom Container
@@ -107,7 +116,40 @@
     </main>
     <form id="stepperForm"></form>
   
-    <footer></footer>
+    <footer>
+        <section class="footer-info">
+            <img src="../assets/images/RE-MOTORS HVIT.png" alt="image of RE-motors logo" class="footer-image__logo">
+            <p class="footer-info__paragraph">EivReza Velocity,</p>
+            <p class="footer-info__paragraph">where your jurney to excellence begins.</p>
+        </section>
+        <section class="footer-navbar">
+            <div class="footer-navbar--container">
+                <h3 class="footer-navbar--header">Navigation</h3>
+                <a href="index.html" class="footer-navbar--link">Home</a>
+                <a href="products.html" class="footer-navbar--link">Products</a>
+                <a href="order" class="footer-navbar--link">Order</a>
+            </div>
+
+            <div class="footer-navbar--container">
+                <h3 class="footer-navbar--header">About Us</h3>
+                <a href="#" class="footer-navbar--link">Press releases</a>
+                <a href="#" class="footer-navbar--link">Customer service</a>
+                <a href="#" class="footer-navbar--link">Newsletter</a>
+            </div>
+
+            <div class="footer-navbar--container">
+                <h3 class="footer-navbar--header">Socials</h3>
+                <a href="#" class="footer-navbar--link">Facebook</a>
+                <a href="#" class="footer-navbar--link">Instagram</a>
+                <a href="#" class="footer-navbar--link">Twitter(x)</a>
+            </div>
+        </section>
+        <section class="footer-settings">
+            <a href="#" class="footer-settings--link">Privacy </a>
+            <a href="#" class="footer-settings--link">Cookies </a>
+            <a href="#" class="footer-settings--link">Cookie settings </a>
+        </section>
+    </footer>
     <script src="../app.js"></script>
     <script src="../stepper.js"></script>
 </body>
