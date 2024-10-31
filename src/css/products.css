@@ -115,6 +115,11 @@ h1{
     border-radius: var(--border-radius-button);
 }
 
+.product__button--container:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
 .product__button--link{
     color: var(--font-color-1);
 }
