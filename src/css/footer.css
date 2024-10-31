@@ -65,3 +65,8 @@ footer{
 .footer-settings--link{
     color: var(--font-color-1);
 }
+
+.footer-settings--link:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
